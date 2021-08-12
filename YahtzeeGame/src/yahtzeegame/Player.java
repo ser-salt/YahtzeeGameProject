@@ -1,4 +1,4 @@
-public class Playerrr {
+public class Player {
 
 
      //Add member variables
