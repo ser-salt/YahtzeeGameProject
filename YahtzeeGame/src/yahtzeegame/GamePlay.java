@@ -1,6 +1,4 @@
-public class YahtzeeGame
-{
-public static void main(String[] args)
+public class GamePlay {
 {
 Yahtzee yahtzee = new Yahtzee();
 }
