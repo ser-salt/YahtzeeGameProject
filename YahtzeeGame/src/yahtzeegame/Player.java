@@ -6,5 +6,18 @@
 package yahtzeegame;
 
 public class Player {
+    private Die[] dice = new Die[5];
+    ScoreCard card = new ScoreCard();
+
+    public Player() {
+        for (int i = 0; i <= 5; i++) {
+            dice[i] = new Die();
+        }
+    }
     
+    public void rollDice(){
+        for (int i = 0; i <= 5; i++) {
+            dice[i].roll();
+        }
+    }
 }

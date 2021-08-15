@@ -5,15 +5,36 @@
  */
 package yahtzeegame;
 
+import java.util.Random;
+
 /**
  *
  * @author Brendan
  */
 public class Die {
-    private int[] faces = {1,2,3,4,5,6};
+    private int currentFace;
+    private Random random = new Random();
+    private boolean isLocked;
+    //isLocked prevents die from being rolled
     
     public Die() {
-        
+        currentFace = 1;
+        isLocked = false;
     }
     
+    public void roll(){
+        if(isLocked){
+            System.out.println("tried to roll locked die");
+        } else {
+            currentFace = random.nextInt(6)+1;
+        }
+    }
+    
+    public int getCurrentFace() {
+        return currentFace;
+    }
+
+    public void setIsLocked(boolean isLocked) {
+        this.isLocked = isLocked;
+    }
 }
