@@ -10,7 +10,6 @@ public class Game
 
 {
 
-     //Add member variables:
 
      private int gameLevel;
 
@@ -60,7 +59,7 @@ public class Game
 
      }
 
-     public void setInput(Scanner datat)
+     public void setInput(Scanner data)
 
      {
 
@@ -70,7 +69,6 @@ public class Game
 
     
 
-     //the no-argument constructor Game
 
      public Game()
 
@@ -80,15 +78,12 @@ public class Game
 
          
 
-          //Prompt the user for number of players
-
           System.out.print("Enter number of Players: ");
 
           //Read in data entered by user
 
           int n = input.nextInt();
 
-          //Loop through number of players and call method newPlayer()
 
           for(int i=0;i<n;i++)
 
@@ -116,7 +111,7 @@ public class Game
          
           p.setName(name);
 
-          //add the instance of Player to the players member variable
+          
 
           players.add(p);
 
@@ -128,9 +123,7 @@ public class Game
 
           System.out.println(" The Players are:");
 
-          //loop through the member variable players and
-
-          //display to the console the result of calling method getName()
+          
 
           for (Player p : players)
 
@@ -146,7 +139,6 @@ public class Game
 
      {
 
-          //loop through the member variable players and call method rollDice()
 
           for (Player p : players)
 
