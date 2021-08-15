@@ -1,8 +1,8 @@
-UpperSection.java
+UpperScore.java
 
 package Yahtzee;
 
-public class UpperSection
+public class UpperScore
 
 {
 
