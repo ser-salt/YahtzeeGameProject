@@ -1,6 +1,6 @@
 Roll.java
 
-package core;
+package Yahtzee;
 
 importjava.util.ArrayList;
 
